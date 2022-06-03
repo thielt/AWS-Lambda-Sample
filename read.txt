@@ -1,0 +1,31 @@
+create table in dynamodb
+-product-inventory
+-partition key: productId
+
+Create new roles in IAM
+-lambda
+-cloudwatchfullaccess
+-dynamodbfullaccess
+
+lambda
+-serverlessapilambda
+-choose existing roles
+-configure memory and time setting
+
+Gateway
+-public rest api
+-newapi: serverless api
+
+-use lambda proxy integration
+-use cors for new resources
+
+-health -get
+-product -get, patch, delete, post
+-products - get
+
+-go to root and deploy api: prod stage
+
+Place in lambda function code and deploy
+-make sure there are no items in dynamodb
+
+input body raw json and check for table update (postman)
